@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips Belajar HTML untuk Pemula</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header>
+    <h1>Tips Belajar HTML untuk Pemula</h1>
+    <nav aria-label="Navigasi Halaman">
+      <ul>
+        <li><a href="#mengapa-html">Mengapa HTML Penting</a></li>
+        <li><a href="#tips-pertama">Tips Pertama</a></li>
+        <li><a href="#kesalahan-umum">Kesalahan Umum</a></li>
+        <li><a href="#sumber-belajar">Sumber Belajar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- Section 1: Mengapa HTML Penting -->
+    <section id="mengapa-html">
+      <h2>Mengapa HTML Penting</h2>
+      <p>
+        HyperText Markup Language (HTML) merupakan fondasi utama dari setiap halaman web yang ada di internet. Tanpa HTML, peramban web tidak akan memiliki struktur untuk menampilkan teks, gambar, formulir, tautan, atau multimedia secara teratur. HTML bertindak layaknya kerangka tulang dalam tubuh manusia, memberikan arti semantik dan pengorganisasian konten yang kokoh sebelum dihias dengan CSS dan dihidupkan dengan JavaScript.
+      </p>
+      <p>
+        Memahami HTML secara mendalam juga krusial bagi aksesibilitas web (a11y) dan optimasi mesin pencari (SEO). Ketika dokumen web disusun menggunakan elemen yang tepat dan bermakna, mesin pencari seperti Google dapat mengindeks konten dengan akurat, dan teknologi asistif seperti pembaca layar (screen reader) dapat membantu pengguna disabilitas menavigasi informasi tanpa kendala.
+      </p>
+    </section>
+
+    <!-- Section 2: Tips Pertama -->
+    <section id="tips-pertama">
+      <h2>Tips Pertama</h2>
+      <ol>
+        <li>
+          <strong>Pahami Anatomi Elemen HTML:</strong> Pelajari struktur dasar tag pembuka, atribut, nilai atribut, isi konten, dan tag penutup. Memahami perbedaan antara elemen berpasangan dan <em>self-closing / void elements</em> (seperti <code>&lt;img&gt;</code> atau <code>&lt;input&gt;</code>) akan mencegah banyak galat penulisan.
+        </li>
+        <li>
+          <strong>Selalu Gunakan Tag Semantik:</strong> Biasakan memilih tag yang merepresentasikan makna data yang disajikan, seperti menggunakan <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, dan <code>&lt;article&gt;</code> alih-alih mengandalkan <code>&lt;div&gt;</code> generik di semua tempat.
+        </li>
+        <li>
+          <strong>Tulis Kode Secara Teratur dan Konsisten:</strong> Gunakan indentasi yang rapi (biasanya 2 atau 4 spasi), huruf kecil (lowercase) untuk nama elemen dan atribut, serta bungkus selalu nilai atribut menggunakan tanda kutip ganda.
+        </li>
+        <li>
+          <strong>Biasakan Praktik Langsung (Hands-on):</strong> Jangan hanya menonton tutorial video atau membaca teori secara pasif. Buat proyek mini sederhana secara bertahap, mulai dari membuat profil diri, halaman resep masakan, hingga replika struktur dokumen artikel berita.
+        </li>
+        <li>
+          <strong>Uji dan Validasi Kode HTML:</strong> Selalu cek hasil sintaks menggunakan W3C Markup Validation Service untuk mendeteksi tag yang belum ditutup, atribut yang usang (deprecated), atau hierarki nesting yang tidak valid.
+        </li>
+      </ol>
+    </section>
+
+    <!-- Section 3: Kesalahan Umum -->
+    <section id="kesalahan-umum">
+      <h2>Kesalahan Umum</h2>
+      <ul>
+        <li>
+          <strong>Penyalahgunaan Elemen Generik (Div Soup):</strong>
+          <p>
+            Banyak pemula membungkus setiap komponen antarmuka ke dalam tag <code>&lt;div&gt;</code> atau <code>&lt;span&gt;</code> tanpa alasan spesifik. Praktik ini merusak makna semantik dokumen, menurunkan keramahan SEO, dan menyulitkan pembaca layar dalam membedakan bagian navigasi, konten utama, atau artikel mandiri.
+          </p>
+        </li>
+        <li>
+          <strong>Mengabaikan Atribut Alternatif (alt) pada Gambar:</strong>
+          <p>
+            Membiarkan atribut <code>alt</code> kosong atau bahkan menghilangkannya sama sekali pada tag <code>&lt;img&gt;</code> adalah kesalahan umum. Atribut ini sangat penting untuk mendeskripsikan konteks gambar saat koneksi lambat, serta menjadi satu-satunya cara bagi pengguna tunanetra untuk mengetahui isi visual tersebut.
+          </p>
+        </li>
+        <li>
+          <strong>Urutan Heading yang Tidak Hierarkis:</strong>
+          <p>
+            Memilih tag heading (<code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code>) hanya berdasarkan ukuran visual bawaan tanpa memperhatikan urutan struktural. Heading harus tersusun bertingkat dan logis, dimulai dari satu <code>&lt;h1&gt;</code> untuk judul utama, diikuti <code>&lt;h2&gt;</code> untuk sub-judul, dan seterusnya.
+          </p>
+        </li>
+        <li>
+          <strong>Mencampuradukkan Struktur dengan Presentasi:</strong>
+          <p>
+            Menggunakan tag HTML usang yang bersifat presentasional murni seperti <code>&lt;font&gt;</code>, <code>&lt;center&gt;</code>, atau mengandalkan atribut <code>style</code> sebaris (inline CSS) secara berlebihan. HTML semestinya murni berfokus pada struktur dan makna dokumen, sedangkan tampilan visual diserahkan sepenuhnya kepada CSS.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 4: Sumber Belajar -->
+    <section id="sumber-belajar">
+      <h2>Sumber Belajar</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs — Learn HTML</a>: Dokumentasi komprehensif, terpercaya, dan menjadi standar rujukan industri bagi seluruh pengembang web modern.
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools HTML Tutorial</a>: Platform pembelajaran interaktif dengan contoh kode langsung (Try It Yourself) yang sangat ramah bagi pemula.
+        </li>
+        <li>
+          <a href="https://web.dev/learn/html/" target="_blank" rel="noopener noreferrer">web.dev — Learn HTML by Google</a>: Kursus mendalam tentang praktik terbaik penulisan HTML modern, mencakup performa web, semantik, serta aksesibilitas.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Tips Belajar HTML untuk Pemula. Hak cipta dilindungi undang-undang.</p>
+  </footer>
+
+</body>
+</html>
